@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+tr { line-height: 10px;vertical-align: middle;
+ }
+
+.comuna_datos {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	line-height:10px;
+}
+
+.comuna_nombre {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.datos {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	padding-left: 4px;
+	line-height:9px;
+	padding-bottom:1px;
+	vertical-align: bottom;
+}
+
+.datos_actividad {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	padding-left: 4px;
+	padding-top:1.5px;
+}
+
+.datos_cuotas {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	padding-left: 4px;
+	padding-top:1.5px;
+	vertical-align: middle;
+}
+
+.importe {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:bold;
+	padding-left: 4px;
+	line-height:10px;
+	padding-top:2px;
+}
+.destino_cuerpo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	line-height:10px;
+}
+.titulos {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight: bold;
+	padding-right: 2px;
+
+	background-color: #CCCCCC;
+	/*border-bottom: 0.5px solid #666666;*/
+	line-height:10px;
+	padding-top:2px;
+	text-align: right;
+}
+.titulo_vencimiento {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 4px;
+	vertical-align: middle;
+
+}
+.datos_ {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-align: right;
+	line-height:10px;
+	border-bottom: 0.5px solid #666666;	
+}
+.importe_ {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight:bold;
+	text-align: right;
+	line-height:10px;
+}
+
+.tituloBoleta {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	text-align: center;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+
+
+
+
+.subTituloBoleta {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	text-align: center;
+	vertical-align: middle;
+	padding-top:5px;
+
+}
+
+.bordeArriba {	    
+	border-top: 0.5px solid #666666;	
+}
+.bordeAbajo {	    
+	border-bottom: 0.5px solid #666666;	
+}
+
+.izq{
+  text-align: left;
+}
+
+.concepto{
+	font-weight:bold;
+	text-align: left;	
+	background-color: #CCCCCC;
+	vertical-align: bottom;
+	line-height: 8px;
+	padding-left: 4px;
+	padding-bottom: 1px;
+}
+
+.datos_concepto {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	padding-left: 4px;
+	vertical-align: middle;
+	line-height: 8px;
+}
+
+.importe_concepto {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight:bold;
+	vertical-align: middle;
+	text-align: right;
+	line-height:8px;
+}
+
+.detalleSubtotal {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight:bold;
+	text-align: right;
+	padding-right: 4px;
+	vertical-align: middle;
+	line-height:8px;
+}
+
+.importeSubtotal {	
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	font-weight:bold;
+	line-height:10px;
+	vertical-align: middle;
+	padding-left: 4px;
+}
+
+
+.total_final{
+	font-size: 10px;
+	font-weight:bold;
+	text-align: center;	
+	background-color: #CCCCCC;
+	vertical-align: bottom;
+	line-height: 8px;
+	padding-left: 4px;
+	padding-bottom: 1px;
+}

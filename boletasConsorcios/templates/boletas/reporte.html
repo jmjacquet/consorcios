@@ -1,0 +1,45 @@
+{% load static from staticfiles %}
+{% load filtros %}
+{% load humanize %}
+{% load i18n %}
+<html dir="ltr" lang="es">
+<head>
+<link rel="stylesheet" href="{% static 'css/boletas.css' %}" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Liquidación</title>
+</head>
+<body>
+            <table width="100%"  cellspacing="0">
+              <br>
+              <tr >
+                 <td  colspan="3" class="subTituloBoleta"> 
+                   <p>GASTOS GENERALES</p>     
+              </tr>              
+              {% regroup detalle_cuotas by id_concepto as lista_conceptos %}
+              {% for categoria in lista_conceptos %}
+                <tr border="0.5" class="datos_cuotas" >
+                  <td colspan="3" class="datos"><strong>{{categoria.list.0.id_concepto__nombre_concepto}}</strong></td>
+                </tr>                  
+                  {% for item in categoria.list %}
+                    <tr border="0.5" class="datos_cuotas" >
+                      <td></td>
+                      <td class="datos">{{item.detalle}}</td>
+                      <td class="importe">$ {{item.importe_base|default_if_none:0|intcomma}}</td>
+                    </tr>
+                  {% endfor %}                  
+                <tr>
+                  <td></td>
+                  <td><strong>Total {{categoria.list.0.id_concepto__nombre_concepto}}</strong></td>
+                  <td class="importe">$ {{categoria.list|totales|default_if_none:0|intcomma}}</td>
+                </tr>
+              {% endfor %}
+             
+              <tr>
+                <td colspan="2" class="bordeArriba"></td>
+                <td colspan="1" class="detalleSubtotal">TOTAL General:</td>
+                <td colspan="1" class="importeSubtotal">$ {{tot_conceptos|intcomma}}</td>                
+              </tr>
+            </table>      
+            
+</body>
+</html>

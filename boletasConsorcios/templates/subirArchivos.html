@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% load static from staticfiles %}
+{% load bootstrap3 %}
+{% block main %}
+<div class="col-xs-12 ">
+  <div class="list-group2">
+        <a href="#" class="list-group-item active">
+            <b>Subir Archivos de Documentación/Ejecutado Expensas</b>         
+        </a>
+   </div>
+ <form action="" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+		{% bootstrap_form form  %}
+    {% buttons %}		
+           <input onclick="$(location).attr('href','/datos/'); return false;"  value="Cancelar" class="btn btn-sm btn-default pull-left"> 
+        
+        <button type="submit" class="btn btn-primary btn-md pull-right">Guardar</button>
+    {% endbuttons %}
+	 </form>
+</div>
+{% endblock main %}
+
+		

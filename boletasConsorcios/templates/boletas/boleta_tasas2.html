@@ -1,0 +1,146 @@
+{% load static from staticfiles %}
+{% load filtros %}
+{% load humanize %}
+{% load i18n %}
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es">
+<head>
+<link rel="stylesheet" href="{% static 'css/boletas2.css' %}" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Liquidación</title>
+
+<style type="text/css">
+@page {
+            size: A4 portrait;
+            margin: 0.25in 0.25in 0.25in 0.25in;
+           padding: 0;
+}
+</style>
+</head>
+<body>
+<table width="100%" height="723" border="0" cellspacing="0" bordercolor="#000000">
+  <tr>
+    <td height="83"  width="20%" align="center"><img src="{% static 'munis/' %}{{dirMuni}}/logo_boleta.png" alt="InfoMunicipio"
+    height="80" width="150" /></td>
+  <td align="center"  width="60%" valign="middle"><p><span class="comuna_nombre">{{sitio.nombre}}</span><br />
+    <span class="comuna_datos">{{sitio.direccion}}<br />
+        {{sitio.varios1}}</span></p><p class="tituloBoleta">{{cuota.id_unidad.id_consorcio.nombre_consorcio}}</p>  </td>
+    <td   width="20%" class="destino_cuerpo">
+      <table width="100" align="middle"  valign="middle" border="0" cellspacing="0">
+        <tr>
+          <td align="center" class="titulos">Nro. Cuota</td>
+        </tr>
+        <tr>
+          <td class="datos" align="center">{{cuota.id_cuota}}</td>
+        </tr>
+        <tr>
+          <td align="center" class="titulos">Período</td>
+        </tr>
+        <tr>
+          <td class="datos" align="center">{{cuota.periodo}} / {{cuota.anio}}</td>
+        </tr>
+        <tr>
+          <td align="center" class="titulos">Fecha Impresión</td>
+        </tr>
+        <tr>
+          <td class="datos" align="center">{{fecha|date:"d/m/Y"}}</td>
+        </tr>
+      </table>    </td>
+  </tr>
+  <tr>
+    <td height="98" colspan="3" valign="middle"><table border="0.5" cellspacing="0" bordercolor="#CCCCCC" valign="middle">
+      <tr>
+        
+        {% if ocupante %}
+        <td nowrap class="titulos"><p>Propietario:</p></td><td colspan="5" nowrap class="datos">{{cuota.id_propietario.id_propietario|default_if_none:""}} - {{cuota.id_propietario.nombre_propietario|default_if_none:""}}</td>
+        <td width="80" nowrap class="titulos">Dirección:</td> 
+        <td colspan="3" nowrap class="datos">{{direccion}}</td>
+        {% else %}
+        <td nowrap class="titulos" ><p>Propietario:</p></td><td colspan="9" nowrap class="datos">{{cuota.id_propietario.id_propietario|default_if_none:""}} - {{cuota.id_propietario.nombre_propietario|default_if_none:""}}</td>       
+        {% endif %}
+      </tr>
+      <tr>
+        {% if ocupante %}
+        <td nowrap  class="titulos">Datos Ocupante:</td>
+        <td colspan="5" nowrap  class="datos">{{ocupante}}</td>
+        {% else %}
+        <td nowrap  class="titulos">Dirección:</td>
+        <td colspan="5" nowrap  class="datos">{{direccion}}</td>
+        {% endif %}
+        <td width="80" nowrap  class="titulos">Barrio/Tipo Unidad:</td> 
+        <td colspan="3" nowrap class="datos">{{cuota.id_unidad.id_tipo_unidad.nombre_tipo_unidad|default_if_none:""}}</td>
+      </tr>
+      <tr>
+        <td nowrap class="titulos">Datos Unidad:</td>
+        <td colspan="5" nowrap class="datos">{{cuota.id_unidad.codigo|default_if_none:""}} - {{cuota.id_unidad.nombre_unidad|default_if_none:""}}</td>
+        <td width="80" nowrap class="titulos">Cod.Pago Electrónico:</td>
+        <td nowrap class="datos">{{codPagoElectronico}}</td>
+        <td nowrap class="titulos">Alquilado:</td>
+        <td nowrap class="datos">{{cuota.id_unidad.alquilado|default_if_none:""}}</td>
+      </tr>
+      <tr>
+        <td nowrap class="titulos">m2 UF:</td>
+        <td nowrap class="datos">{{cuota.id_unidad.superficie|default_if_none:""}}</td>
+        <td nowrap class="titulos">Manzana:</td>
+        <td nowrap class="datos">{{cuota.id_unidad.manzana|default_if_none:""}}</td>
+        <td nowrap class="titulos">Lote:</td>
+        <td nowrap class="datos">{{cuota.id_unidad.lote|default_if_none:""}}</td>
+        <td nowrap class="titulos">1º Vencimiento:</td> 
+        <td nowrap class="datos">{{vencimiento|date:"d/m/Y"}}</td>
+        <td nowrap class="titulos">1º Importe:</td> 
+        <td nowrap class="datos importe">${{punit1}}</td>
+      </tr>
+      <tr>
+        <td nowrap  class="titulos">Importe Orig.:</td>
+        <td colspan="5" nowrap  class="datos importe">$ {{cuota.saldo}}</td>
+        <td nowrap class="titulos">2º Vencimiento:</span></td>
+        <td nowrap class="datos">{{vencimiento2|date:"d/m/Y"}}</td>
+        <td nowrap class="titulos">2º Importe:</td>
+        <td nowrap class="datos importe">${{punit2}}</td>
+      </tr>
+      
+      
+    </table></td>
+  </tr> 
+   
+</table>
+<table width="100%" border="0" cellspacing="0" bordercolor="#000000" >
+<tr>
+    <td colspan="3" align="center" valign="bottom" ><hr>
+      <img src="data:image/png;base64,{{codbar}}" >      </td>
+  </tr>
+   <tr>
+    <td valign="bottom" height="30" colspan="3" align="center" valign="middle" class="CB">     
+      {{codigo}}      
+    </td>
+   </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" bordercolor="#000000" >
+<tr >
+          <td  colspan="4" class="subTituloBoleta"><p class="subTituloBoleta">GASTOS GENERALES</p>        </tr>
+        {% regroup detalle_cuotas by id_concepto as lista_conceptos %}
+        {% for categoria in lista_conceptos %}
+          <tr border="0.5" class="" >
+            <td colspan="4" class="concepto"><strong>{{categoria.list.0.id_concepto__nombre_concepto}}</strong></td>
+          </tr>
+                {% for item in categoria.list %}
+                <tr border="0.5" class="" >
+                  <td width="20%"></td>
+                  <td width="50%" class="datos_concepto">{{item.detalle}}</td>
+                  <td width="15%" class="importe_concepto">$ {{item.importe_base|default_if_none:0|intcomma}}</td>
+                  <td width="15%" class="importe_concepto">&nbsp;</td>
+                </tr>
+                {% endfor %}
+          <tr class="bordeArriba">
+            <td width="20%">&nbsp;</td>
+            <td colspan="2" class="detalleSubtotal">TOTAL {{categoria.list.0.id_concepto__nombre_concepto}}:</td>
+            <td width="15%"  class="importeSubtotal">$ {{categoria.list|totales|default_if_none:0|intcomma}}</td>
+          </tr>
+         {% endfor %}
+  <tr>
+    <td colspan="4" class="total_final">TOTAL GASTOS GENERALES: $ {{tot_conceptos|default_if_none:0|intcomma}}</td>
+  </tr>
+  
+</table>
+</body>
+</html>

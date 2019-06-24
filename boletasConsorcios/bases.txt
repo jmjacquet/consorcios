@@ -1,0 +1,206 @@
+# This is an auto-generated Django model module.
+# You'll have to do the following manually to clean this up:
+#   * Rearrange models' order
+#   * Make sure each model has one field with primary_key=True
+#   * Remove `managed = False` lines if you wish to allow Django to create and delete the table
+# Feel free to rename the models, but don't rename db_table values or field names.
+#
+# Also note: You'll have to insert the output of 'django-admin.py sqlcustom [appname]'
+# into your database.
+from __future__ import unicode_literals
+
+from django.db import models
+
+class Cabanias(models.Model):
+    id = models.IntegerField(primary_key=True)
+    nombre_complejo = models.CharField(max_length=100)
+    propietario = models.CharField(max_length=100, blank=True)
+    telefonos = models.CharField(max_length=100, blank=True)
+    email = models.CharField(max_length=100, blank=True)
+    web = models.CharField(max_length=40, blank=True)
+    ubicacion = models.CharField(max_length=200, blank=True)
+    descripcion = models.TextField(blank=True)
+    tipo = models.CharField(max_length=30, blank=True)
+    class Meta:
+        managed = False
+        db_table = 'cabanias'
+
+class GgConcepto(models.Model):
+    id_concepto = models.IntegerField(db_column='ID_CONCEPTO') # Field name made lowercase.
+    id_tipo_concepto = models.IntegerField(db_column='ID_TIPO_CONCEPTO') # Field name made lowercase.
+    id_consorcio = models.IntegerField(db_column='ID_CONSORCIO') # Field name made lowercase.
+    id_tipo_unidad = models.IntegerField(db_column='ID_TIPO_UNIDAD', blank=True, null=True) # Field name made lowercase.
+    id_proveedor = models.IntegerField(db_column='ID_PROVEEDOR', blank=True, null=True) # Field name made lowercase.
+    orden = models.IntegerField(db_column='ORDEN', blank=True, null=True) # Field name made lowercase.
+    nombre_concepto = models.CharField(db_column='NOMBRE_CONCEPTO', max_length=200, blank=True) # Field name made lowercase.
+    monto = models.DecimalField(db_column='MONTO', max_digits=15, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    porcentaje = models.DecimalField(db_column='PORCENTAJE', max_digits=15, decimal_places=4, blank=True, null=True) # Field name made lowercase.
+    enero = models.CharField(db_column='ENERO', max_length=1, blank=True) # Field name made lowercase.
+    febrero = models.CharField(db_column='FEBRERO', max_length=1, blank=True) # Field name made lowercase.
+    marzo = models.CharField(db_column='MARZO', max_length=1, blank=True) # Field name made lowercase.
+    abril = models.CharField(db_column='ABRIL', max_length=1, blank=True) # Field name made lowercase.
+    mayo = models.CharField(db_column='MAYO', max_length=1, blank=True) # Field name made lowercase.
+    junio = models.CharField(db_column='JUNIO', max_length=1, blank=True) # Field name made lowercase.
+    julio = models.CharField(db_column='JULIO', max_length=1, blank=True) # Field name made lowercase.
+    agosto = models.CharField(db_column='AGOSTO', max_length=1, blank=True) # Field name made lowercase.
+    septiembre = models.CharField(db_column='SEPTIEMBRE', max_length=1, blank=True) # Field name made lowercase.
+    octubre = models.CharField(db_column='OCTUBRE', max_length=1, blank=True) # Field name made lowercase.
+    noviembre = models.CharField(db_column='NOVIEMBRE', max_length=1, blank=True) # Field name made lowercase.
+    diciembre = models.CharField(db_column='DICIEMBRE', max_length=1, blank=True) # Field name made lowercase.
+    baja = models.CharField(db_column='BAJA', max_length=1, blank=True) # Field name made lowercase.
+    codigo = models.CharField(db_column='CODIGO', max_length=20, blank=True) # Field name made lowercase.
+    id_tributo = models.IntegerField(db_column='ID_TRIBUTO', blank=True, null=True) # Field name made lowercase.
+    id_tipo_calculo = models.IntegerField(db_column='ID_TIPO_CALCULO', blank=True, null=True) # Field name made lowercase.
+    class Meta:
+        managed = False
+        db_table = 'gg_concepto'
+
+class GgCuota(models.Model):
+    id_cuota = models.IntegerField(db_column='ID_CUOTA', primary_key=True) # Field name made lowercase.
+    id_unidad = models.IntegerField(db_column='ID_UNIDAD') # Field name made lowercase.
+    id_liquidacion = models.IntegerField(db_column='ID_LIQUIDACION', blank=True, null=True) # Field name made lowercase.
+    id_propietario = models.IntegerField(db_column='ID_PROPIETARIO', blank=True, null=True) # Field name made lowercase.
+    anio = models.IntegerField(db_column='ANIO', blank=True, null=True) # Field name made lowercase.
+    periodo = models.IntegerField(db_column='PERIODO', blank=True, null=True) # Field name made lowercase.
+    importe_base = models.DecimalField(db_column='IMPORTE_BASE', max_digits=15, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    importe_base_2 = models.DecimalField(db_column='IMPORTE_BASE_2', max_digits=15, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    importe_base_3 = models.DecimalField(db_column='IMPORTE_BASE_3', max_digits=15, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    fecha_vencim = models.DateField(db_column='FECHA_VENCIM', blank=True, null=True) # Field name made lowercase.
+    fecha_vencim_2 = models.DateField(db_column='FECHA_VENCIM_2', blank=True, null=True) # Field name made lowercase.
+    fecha_vencim_3 = models.DateField(db_column='FECHA_VENCIM_3', blank=True, null=True) # Field name made lowercase.
+    saldo = models.DecimalField(db_column='SALDO', max_digits=15, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    detalle = models.CharField(db_column='DETALLE', max_length=500, blank=True) # Field name made lowercase.
+    id_estado = models.IntegerField(db_column='ID_ESTADO') # Field name made lowercase.
+    fecha = models.DateField(db_column='FECHA', blank=True, null=True) # Field name made lowercase.
+    usuario = models.CharField(db_column='USUARIO', max_length=10, blank=True) # Field name made lowercase.
+    codigo_barra = models.CharField(db_column='CODIGO_BARRA', max_length=100, blank=True) # Field name made lowercase.
+    id_tributo = models.IntegerField(db_column='ID_TRIBUTO', blank=True, null=True) # Field name made lowercase.
+    id_plan = models.IntegerField(db_column='ID_PLAN', blank=True, null=True) # Field name made lowercase.
+    class Meta:
+        managed = False
+        db_table = 'gg_cuota'
+
+class GgCuotaDetalle(models.Model):
+    id_cuota_detalle = models.IntegerField(db_column='ID_CUOTA_DETALLE', primary_key=True) # Field name made lowercase.
+    id_cuota = models.IntegerField(db_column='ID_CUOTA') # Field name made lowercase.
+    id_concepto = models.IntegerField(db_column='ID_CONCEPTO') # Field name made lowercase.
+    detalle = models.CharField(db_column='DETALLE', max_length=500, blank=True) # Field name made lowercase.
+    importe_base = models.DecimalField(db_column='IMPORTE_BASE', max_digits=15, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    nro_recibo = models.IntegerField(db_column='NRO_RECIBO', blank=True, null=True) # Field name made lowercase.
+    fecha = models.DateField(db_column='FECHA', blank=True, null=True) # Field name made lowercase.
+    usuario = models.CharField(db_column='USUARIO', max_length=20, blank=True) # Field name made lowercase.
+    debito_credito = models.IntegerField(db_column='DEBITO_CREDITO', blank=True, null=True) # Field name made lowercase.
+    id_pago = models.IntegerField(db_column='ID_PAGO', blank=True, null=True) # Field name made lowercase.
+    orden = models.IntegerField(db_column='ORDEN', blank=True, null=True) # Field name made lowercase.
+    class Meta:
+        managed = False
+        db_table = 'gg_cuota_detalle'
+
+class GgLiqCta(models.Model):
+    id_liq = models.IntegerField(db_column='ID_LIQ', primary_key=True) # Field name made lowercase.
+    id_persona = models.IntegerField(db_column='ID_PERSONA', blank=True, null=True) # Field name made lowercase.
+    estado = models.IntegerField(db_column='ESTADO', blank=True, null=True) # Field name made lowercase.
+    tipo = models.IntegerField(db_column='TIPO', blank=True, null=True) # Field name made lowercase.
+    vencimiento = models.DateField(db_column='VENCIMIENTO', blank=True, null=True) # Field name made lowercase.
+    nominal = models.DecimalField(db_column='NOMINAL', max_digits=10, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    interes = models.DecimalField(db_column='INTERES', max_digits=10, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    total = models.DecimalField(db_column='TOTAL', max_digits=10, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    fecha = models.DateField(db_column='FECHA', blank=True, null=True) # Field name made lowercase.
+    hora = models.TimeField(db_column='HORA', blank=True, null=True) # Field name made lowercase.
+    usuario = models.CharField(db_column='USUARIO', max_length=30, blank=True) # Field name made lowercase.
+    fecha_punitorios = models.DateField(db_column='FECHA_PUNITORIOS', blank=True, null=True) # Field name made lowercase.
+    class Meta:
+        managed = False
+        db_table = 'gg_liq_cta'
+
+class GgLiqCtaDetalle(models.Model):
+    id_liq = models.IntegerField(db_column='ID_LIQ', primary_key=True) # Field name made lowercase.
+    id_cuota = models.IntegerField(db_column='ID_CUOTA') # Field name made lowercase.
+    id_tributo = models.IntegerField(db_column='ID_TRIBUTO', blank=True, null=True) # Field name made lowercase.
+    saldo = models.DecimalField(db_column='SALDO', max_digits=15, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    interes = models.DecimalField(db_column='INTERES', max_digits=15, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    class Meta:
+        managed = False
+        db_table = 'gg_liq_cta_detalle'
+
+class GgPropietario(models.Model):
+    id_propietario = models.IntegerField(db_column='ID_PROPIETARIO', primary_key=True) # Field name made lowercase.
+    id_tipo_doc = models.IntegerField(db_column='ID_TIPO_DOC', blank=True, null=True) # Field name made lowercase.
+    id_tipo_iva = models.IntegerField(db_column='ID_TIPO_IVA', blank=True, null=True) # Field name made lowercase.
+    id_provincia = models.IntegerField(db_column='ID_PROVINCIA', blank=True, null=True) # Field name made lowercase.
+    id_pais = models.IntegerField(db_column='ID_PAIS', blank=True, null=True) # Field name made lowercase.
+    codigo = models.CharField(db_column='CODIGO', max_length=10, blank=True) # Field name made lowercase.
+    nombre_propietario = models.CharField(db_column='NOMBRE_PROPIETARIO', max_length=100) # Field name made lowercase.
+    nro_documento = models.DecimalField(db_column='NRO_DOCUMENTO', max_digits=18, decimal_places=0, blank=True, null=True) # Field name made lowercase.
+    direccion = models.CharField(db_column='DIRECCION', max_length=200, blank=True) # Field name made lowercase.
+    localidad = models.CharField(db_column='LOCALIDAD', max_length=100, blank=True) # Field name made lowercase.
+    codigo_postal = models.CharField(db_column='CODIGO_POSTAL', max_length=10, blank=True) # Field name made lowercase.
+    fecha_nac = models.DateField(db_column='FECHA_NAC', blank=True, null=True) # Field name made lowercase.
+    sexo = models.CharField(db_column='SEXO', max_length=1, blank=True) # Field name made lowercase.
+    cuit_cuil = models.CharField(db_column='CUIT_CUIL', max_length=30, blank=True) # Field name made lowercase.
+    telefono = models.CharField(db_column='TELEFONO', max_length=100, blank=True) # Field name made lowercase.
+    email = models.CharField(db_column='EMAIL', max_length=50, blank=True) # Field name made lowercase.
+    cod_web = models.CharField(db_column='COD_WEB', max_length=10, blank=True) # Field name made lowercase.
+    baja = models.CharField(db_column='BAJA', max_length=1, blank=True) # Field name made lowercase.
+    class Meta:
+        managed = False
+        db_table = 'gg_propietario'
+
+class GgUnidadConsorcio(models.Model):
+    id_unidad = models.IntegerField(db_column='ID_UNIDAD', primary_key=True) # Field name made lowercase.
+    id_tipo_unidad = models.IntegerField(db_column='ID_TIPO_UNIDAD') # Field name made lowercase.
+    id_consorcio = models.IntegerField(db_column='ID_CONSORCIO') # Field name made lowercase.
+    id_propietario = models.IntegerField(db_column='ID_PROPIETARIO', blank=True, null=True) # Field name made lowercase.
+    codigo = models.CharField(db_column='CODIGO', max_length=10, blank=True) # Field name made lowercase.
+    nombre_unidad = models.CharField(db_column='NOMBRE_UNIDAD', max_length=30, blank=True) # Field name made lowercase.
+    alquilado = models.CharField(db_column='ALQUILADO', max_length=1, blank=True) # Field name made lowercase.
+    datos_ocupante = models.CharField(db_column='DATOS_OCUPANTE', max_length=100, blank=True) # Field name made lowercase.
+    domicilio_reparto = models.CharField(db_column='DOMICILIO_REPARTO', max_length=1000, blank=True) # Field name made lowercase.
+    boleta_separada = models.CharField(db_column='BOLETA_SEPARADA', max_length=1, blank=True) # Field name made lowercase.
+    porcentaje = models.DecimalField(db_column='PORCENTAJE', max_digits=15, decimal_places=4, blank=True, null=True) # Field name made lowercase.
+    superficie = models.DecimalField(db_column='SUPERFICIE', max_digits=15, decimal_places=2, blank=True, null=True) # Field name made lowercase.
+    baja = models.CharField(db_column='BAJA', max_length=1, blank=True) # Field name made lowercase.
+    detalle = models.CharField(db_column='DETALLE', max_length=2000, blank=True) # Field name made lowercase.
+    torre = models.CharField(db_column='TORRE', max_length=50, blank=True) # Field name made lowercase.
+    piso = models.CharField(db_column='PISO', max_length=50, blank=True) # Field name made lowercase.
+    departamento = models.CharField(db_column='DEPARTAMENTO', max_length=50, blank=True) # Field name made lowercase.
+    barrio = models.CharField(db_column='BARRIO', max_length=50, blank=True) # Field name made lowercase.
+    manzana = models.CharField(db_column='MANZANA', max_length=50, blank=True) # Field name made lowercase.
+    lote = models.CharField(db_column='LOTE', max_length=50, blank=True) # Field name made lowercase.
+    class Meta:
+        managed = False
+        db_table = 'gg_unidad_consorcio'
+
+class Noticias(models.Model):
+    id = models.IntegerField(primary_key=True)
+    fecha = models.DateField()
+    titulo = models.CharField(max_length=200)
+    texto = models.TextField()
+    class Meta:
+        managed = False
+        db_table = 'noticias'
+
+class Ordenanzas(models.Model):
+    id = models.IntegerField(primary_key=True)
+    fecha = models.DateField(blank=True, null=True)
+    titulo = models.CharField(max_length=200, blank=True)
+    class Meta:
+        managed = False
+        db_table = 'ordenanzas'
+
+class Slider(models.Model):
+    id = models.IntegerField(primary_key=True)
+    titulo = models.CharField(max_length=200, blank=True)
+    subtitulo = models.CharField(max_length=200, blank=True)
+    descripcion = models.TextField(blank=True)
+    class Meta:
+        managed = False
+        db_table = 'slider'
+
+class Usuarios(models.Model):
+    usuario = models.CharField(primary_key=True, max_length=30)
+    password = models.CharField(max_length=20, blank=True)
+    class Meta:
+        managed = False
+        db_table = 'usuarios'
+

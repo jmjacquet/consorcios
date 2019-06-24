@@ -1,0 +1,38 @@
+{% if user.is_authenticated %}
+ <ul id="sidebar" class="nav nav-pills nav-stacked list-group " >
+ {% if not user.is_staff %}  
+    <li class="active"><a data-href="/logout/" target="_self"><span class="glyphicon glyphicon-off"></span>  Desconectar</a></li>
+    <li><a data-href="{% url 'padrones_responsable' %}" target="_self"><span class="glyphicon glyphicon-edit"></span>  Autoliquidación Boletas</a></li>
+    {% if sitio.tipoLogin < 1 %}
+    <li><a data-href="{% url 'reserva_canchas' %}" target="_self"><span class="glyphicon glyphicon-th-large"></span>  Reserva de Canchas</a></li>   
+    {% endif %}
+    {% if unidad %}
+        <li><a data-href="{% url 'unidad_editar' unidad %}" role="button" target="_self"><span class="glyphicon glyphicon-user"></span>       Administrar Usuario</a></li> 
+    {% else %}     
+        <li><a data-href="{% url 'propietario_editar' user.userprofile.id_propietario %}" role="button" target="_self"><span class="glyphicon glyphicon-user"></span>       Administrar Usuario</a></li>
+    {% endif %}
+    {% if sitio.tipoLogin < 1 %}
+        <li><a data-href="{% url 'datos' %}" target="_self"><span class="glyphicon glyphicon-calendar"></span>  Ejecutado Expensas</a></li>
+        <li><a data-href="{% url 'documentos' %}" target="_self"><span class="glyphicon glyphicon-folder-open"></span>  Documentación Extra</a></li>
+        <li><a data-href="{% url 'obras' %}" target="_self"><span class="glyphicon glyphicon-exclamation-sign"></span>  Documentación Obras</a></li>
+        <li><a data-href="{% url 'terminos' %}" target="_self"><span class="glyphicon glyphicon-info-sign"></span>  Términos y Condiciones</a></li>
+    {% else %}     
+        <li><a data-href="{% url 'datos' %}" target="_self"><span class="glyphicon glyphicon-calendar"></span>  Ejecutado Expensas</a></li>
+        <li><a data-href="{% url 'documentos' %}" target="_self"><span class="glyphicon glyphicon-folder-open"></span>  Documentación Extra</a></li>
+    {% endif %}
+    {# <li><a href="/administrador/"><span class="glyphicon glyphicon-briefcase"></span>  Admin</a></li> #}
+ {% else %}  
+ 	<li class="active"><a data-href="/logout/" target="_self"><span class="glyphicon glyphicon-off"></span>  Desconectar</a></li>
+    {% if sitio.tipoLogin < 1 %}
+    <li><a data-href="{% url 'reserva_canchas' %}" target="_self"><span class="glyphicon glyphicon-th-large"></span>  Reserva de Canchas</a></li>
+    {% endif %}
+    <li><a data-href="{% url 'datos' %}" target="_self"><span class="glyphicon glyphicon-calendar"></span>  Ejecutado Expensas</a></li>
+    <li><a data-href="{% url 'documentos' %}" target="_self"><span class="glyphicon glyphicon-folder-open"></span>  Documentación Extra</a></li>
+    <li><a data-href="{% url 'obras' %}" target="_self"><span class="glyphicon glyphicon-exclamation-sign"></span> Documentación Obras</a></li>
+    <li><a data-href="{% url 'subirArchivos' %}" target="_self"><span class="glyphicon glyphicon-upload"></span>  Subir Archivos</a></li>
+    
+
+ {% endif %}
+</ul>       
+{% endif %}
+

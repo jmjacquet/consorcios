@@ -1,0 +1,152 @@
+{% extends "index.html" %}
+{% load static from staticfiles %}
+{% block extra_js %}
+    {% if sitio.liquidacion_web != 'N' %}
+        <script src="{% static 'js/scriptsLiq.js' %}" type="text/javascript"></script>
+    {% endif%}
+{% endblock %}
+
+
+
+{% block main %}
+
+<div class="col-xs-12 col-md-12 ">
+    {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>{{ message }}</strong>
+                
+                </div>
+            {% endfor %}
+    {% endif %}
+    <div class="list-group2">
+        <a href="#" class="list-group-item active">
+            <b>Listado Completo de Cuotas de la Unidad {{ padron.codigo }} ({{ padron.nombre_unidad }}) - {{responsable.nombre_propietario}} </b>
+            {% if user.is_staff %} IdPadr: {{ padron.id_unidad }}{% endif %}
+            
+        </a>
+        </div>
+    {% if padron %}
+   <ul class="list-group">
+    <a  class="list-group-item active"><b>Filtrar Cuotas por Unidad/Año</b></a>
+
+    <li class="list-group-item">            
+            {% include "filtro_anio.html" %}
+            <div class="btn-group ">
+                <button id="idp" value="{{ padron.id_unidad }}" type="button" class="btn btn-principal btn-primary dropdown-toggle btn-xs" data-toggle="dropdown">
+                    {{ padron.codigo }} ({{ padron.nombre_unidad }}) <b class="caret"></b>
+                </button>
+              <ul id="menuidp" class="dropdown-menu filtros" role="menu">
+                {% for idp in padr %}
+                    <li><a val="{{ idp.id_unidad }}">{{ idp.codigo }} ({{ idp.nombre_unidad }})</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+    </li>
+    
+</ul>
+{% endif %}
+    <input class="hidden" value="{{ padron.id_unidad|safe }}" id="id_padron"/>
+    {% if cuotas %}
+    <div class="datagrid" style="overflow: auto; width : 100%; height : 405px;">
+    <table id="tablaCuotas" class="table-condensed table-responsive">
+    <thead>
+    	<tr class="info">
+            <th>{% if sitio.liquidacion_web != 'N' %}
+                <input type="checkbox" id="checkall" title="Seleccionar Todas"/>
+                {% endif %}
+            </th>
+    		<th>Año</th>
+    		<th>Período</th>
+    		<th>Fecha</th>
+            <th>Concepto</th>
+    		<th>Estado</th>
+    		<th>Vencimiento</th>
+            <th>2º Vencimiento</th>
+   		    <th>Importe</th>
+            <th></th>            
+    	</tr>
+    </thead>
+    <tbody class="detalleCuotas">
+        <div id="cuotas">
+    	
+        {% for item in cuotas %}
+        <tr {% if item.id_estado >= 2 or item.judiciales == 'J' %}
+            class="pagada">
+            <td></td>
+            {% else %}
+            >
+            <td>
+             {% if sitio.liquidacion_web != 'N' %}
+                <input type="checkbox" class='tildado' id="chk_{{forloop.counter0}}" value="{{ item.saldo }}"/>
+             {% endif %}
+            </td>
+            {% endif %}
+            <td>{{ item.anio }}</td>
+            <td>{{ item.periodo }}</td>
+            <td>{{ item.fecha|date:"d/m/Y" }}</td>
+            <td><strong>{{ item.get_id_tributo_display }}</strong></td>
+            <td><strong> {% if item.judiciales == 'J' %}JUDICIALES{% else %}{{ item.get_id_estado_display }}{% endif %}</strong></td>
+            <td>{{ item.fecha_vencim|date:"d/m/Y" }}</td>
+            <td>{{ item.fecha_vencim_2|date:"d/m/Y" }}</td>           
+            {% if item.id_estado >= 2 or item.judiciales == 'J' %}
+                <td><input class="hidden" value="{{ item.saldo }}" id="saldo_chk_{{forloop.counter0}}"/></td>
+            {% else %}
+                <td>$ {{ item.saldo }}<input class="hidden" value="{{ item.saldo }}" id="saldo_chk_{{forloop.counter0}}"/></td>
+            {% endif %}
+            <td>
+                <input class="hidden" value="{{item.pk|safe}}" id="chk_{{forloop.counter0}}_id_cuota"/>
+               
+                {% if item.id_estado < 2 and item.judiciales != 'J' %}
+                    <a  title="Imprimir Boleta {{ item.periodo }}/{{ item.anio }}" onClick="window.open('{% url 'imprimirPDF' item.pk %}');" >
+                    <span class="glyphicon glyphicon-print iconosTabla"></span></a>                
+                {% else %}
+                   <i class="glyphicon glyphicon-ok-circle iconosTabla" aria-hidden="true" title="{% if item.judiciales == 'J' %}Judiciales{% else %}Boleta Paga{% endif %}" onClick="alertify.set('notifier','position', 'top-right');alertify.error('La cuota {{ item.periodo }}/{{ item.anio }} {% if item.judiciales == 'J' %} está en JUDICIALES {% else %} ya fué pagada!{% endif %}');"></i>
+                {% endif %}
+            </td>
+
+    	</tr>
+      	{% endfor %}
+      </div>
+      	
+    </tbody>
+    </table>
+    </div>
+                <div class="listado-pie">                    
+                  <b>{{cuotas.count}}</b> cuotas encontradas.
+                </div>
+    {% else %}
+            <div class="listado-pie">
+                  <b>No existen cuotas para el período seleccionado.</b>
+                </div>
+
+    {% endif %}
+</div>
+
+
+{% endblock main %}
+
+{% block menuizq %}
+
+
+
+
+{% if sitio.liquidacion_web != 'N' %}
+    <br>
+    <ul class="list-group">
+        <a  class="list-group-item active"><b>Liquidación</b></a>
+        <li class="list-group-item">  Cuotas Seleccionadas <span class="badge " id="montoLiqCant"> 0</span></li>
+        <li class="list-group-item">  Total sin punitorios <span class="badge " >$ <span id="montoLiq"> 0.00</span></span></li>
+        <li class="list-group-item"> 
+        <button id="generarLiq" type="button" class="btn btn-principal btn-primary btn-xs"><i class="fa fa-save"></i> Generar e Imprimir</button>
+        </li>
+
+    </ul>
+{% endif %}
+
+{% endblock menuizq %}
+
+
+
+

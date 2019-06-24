@@ -1,0 +1,441 @@
+[Fri Jun 30 10:21:14.676576 2017] [wsgi:error] [pid 27345:tid 140577057036032] 442
+[Fri Jun 30 10:35:03.121855 2017] [wsgi:error] [pid 27346:tid 140577065428736] 442
+[Fri Jun 30 10:35:28.029471 2017] [wsgi:error] [pid 27345:tid 140577065428736] 442
+[Fri Jun 30 10:35:43.125823 2017] [wsgi:error] [pid 27346:tid 140577057036032] 442
+[Fri Jun 30 10:52:54.474684 2017] [wsgi:error] [pid 27346:tid 140577057036032] 442
+[Fri Jun 30 10:53:26.475312 2017] [wsgi:error] [pid 27345:tid 140577057036032] 442
+[Fri Jun 30 11:12:40.132154 2017] [wsgi:error] [pid 27346:tid 140577057036032] 442
+[Fri Jun 30 11:32:30.193833 2017] [wsgi:error] [pid 27346:tid 140577057036032] 442
+[Fri Jun 30 11:32:57.321475 2017] [wsgi:error] [pid 27345:tid 140577057036032] 442
+[Fri Jun 30 12:24:35.558903 2017] [wsgi:error] [pid 27345:tid 140577057036032] 442
+[Fri Jun 30 12:25:39.634219 2017] [wsgi:error] [pid 27346:tid 140577057036032] 442
+[Fri Jun 30 12:26:30.500724 2017] [wsgi:error] [pid 27345:tid 140577065428736] 442
+[Fri Jun 30 13:00:34.461296 2017] [wsgi:error] [pid 27346:tid 140577065428736] 442
+[Fri Jun 30 13:00:46.932363 2017] [wsgi:error] [pid 27346:tid 140577065428736] 442
+[Fri Jun 30 13:01:10.799614 2017] [wsgi:error] [pid 27346:tid 140577057036032] 442
+[Fri Jun 30 13:01:37.159985 2017] [wsgi:error] [pid 27345:tid 140577065428736] 442
+[Fri Jun 30 13:05:13.702806 2017] [wsgi:error] [pid 27346:tid 140577065428736] 442
+[Fri Jun 30 13:37:41.052810 2017] [wsgi:error] [pid 27346:tid 140577057036032] 442
+[Fri Jun 30 20:30:51.337635 2017] [mpm_worker:notice] [pid 20827:tid 140577247385472] AH00298: SIGHUP received.  Attempting to restart
+[Fri Jun 30 20:30:51.725784 2017] [wsgi:warn] [pid 20827:tid 140577247385472] mod_wsgi: Compiled for Python/2.7.9.
+[Fri Jun 30 20:30:51.725818 2017] [wsgi:warn] [pid 20827:tid 140577247385472] mod_wsgi: Runtime using Python/2.7.5.
+[Fri Jun 30 20:30:51.729726 2017] [mpm_worker:notice] [pid 20827:tid 140577247385472] AH00292: Apache/2.4.17 (Unix) mod_wsgi/4.4.21 Python/2.7.5 configured -- resuming normal operations
+[Fri Jun 30 20:30:51.729767 2017] [core:notice] [pid 20827:tid 140577247385472] AH00094: Command line: '/home/grupogua/webapps/boletasconsorcios/apache2/bin/httpd.worker -f /home/grupogua/webapps/boletasconsorcios/apache2/conf/httpd.conf'
+[Fri Jun 30 17:30:56.193762 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:30:56.193844 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160] Traceback (most recent call last):
+[Fri Jun 30 17:30:56.193876 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:30:56.194375 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     self.load_middleware()
+[Fri Jun 30 17:30:56.194427 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:30:56.194888 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:30:56.194909 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:30:56.195141 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     module = import_module(module_path)
+[Fri Jun 30 17:30:56.195160 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:30:56.195511 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     __import__(name)
+[Fri Jun 30 17:30:56.195540 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:30:56.195917 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:30:56.195934 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:30:56.196312 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:30:56.196329 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:30:56.196348 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:30:56.196358 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:30:56.196369 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     (panel_module, e))
+[Fri Jun 30 17:30:56.196424 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:30:56.911094 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] mod_wsgi (pid=13149): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:30:56.911172 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] Traceback (most recent call last):
+[Fri Jun 30 17:30:56.911202 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:30:56.911343 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     self.load_middleware()
+[Fri Jun 30 17:30:56.911362 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:30:56.911490 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:30:56.911508 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:30:56.911578 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     module = import_module(module_path)
+[Fri Jun 30 17:30:56.911592 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:30:56.911640 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     __import__(name)
+[Fri Jun 30 17:30:56.911651 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:30:56.911710 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:30:56.911722 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:30:56.911782 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:30:56.911804 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:30:56.911821 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:30:56.911830 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:30:56.911842 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     (panel_module, e))
+[Fri Jun 30 17:30:56.911864 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:30:58.140677 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:30:58.140747 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160] Traceback (most recent call last):
+[Fri Jun 30 17:30:58.140784 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:30:58.140846 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     self.load_middleware()
+[Fri Jun 30 17:30:58.140863 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:30:58.140884 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:30:58.140895 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:30:58.140913 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     module = import_module(module_path)
+[Fri Jun 30 17:30:58.140923 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:30:58.140942 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     __import__(name)
+[Fri Jun 30 17:30:58.140951 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:30:58.140967 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:30:58.140977 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:30:58.140991 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:30:58.141000 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:30:58.141014 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:30:58.141023 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:30:58.141037 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     (panel_module, e))
+[Fri Jun 30 17:30:58.141061 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:30:58.415664 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] mod_wsgi (pid=13149): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:30:58.415723 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] Traceback (most recent call last):
+[Fri Jun 30 17:30:58.415750 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:30:58.415791 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     self.load_middleware()
+[Fri Jun 30 17:30:58.415803 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:30:58.415818 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:30:58.415827 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:30:58.415842 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     module = import_module(module_path)
+[Fri Jun 30 17:30:58.415850 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:30:58.415864 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     __import__(name)
+[Fri Jun 30 17:30:58.415871 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:30:58.415962 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:30:58.415972 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:30:58.415984 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:30:58.415991 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:30:58.416002 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:30:58.416010 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:30:58.416020 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     (panel_module, e))
+[Fri Jun 30 17:30:58.416040 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:30:59.768662 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:30:59.768724 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160] Traceback (most recent call last):
+[Fri Jun 30 17:30:59.768752 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:30:59.768802 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     self.load_middleware()
+[Fri Jun 30 17:30:59.768817 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:30:59.768834 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:30:59.768844 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:30:59.768859 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     module = import_module(module_path)
+[Fri Jun 30 17:30:59.768867 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:30:59.768881 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     __import__(name)
+[Fri Jun 30 17:30:59.768888 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:30:59.768900 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:30:59.768907 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:30:59.768919 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:30:59.768925 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:30:59.768936 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:30:59.768944 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:30:59.768955 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160]     (panel_module, e))
+[Fri Jun 30 17:30:59.768976 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:160] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:00.049521 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:00.049592 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160] Traceback (most recent call last):
+[Fri Jun 30 17:31:00.049628 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:00.049677 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     self.load_middleware()
+[Fri Jun 30 17:31:00.049694 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:00.049719 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:00.049733 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:00.049780 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     module = import_module(module_path)
+[Fri Jun 30 17:31:00.049794 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:00.049815 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     __import__(name)
+[Fri Jun 30 17:31:00.049827 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:00.049847 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:00.049859 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:00.049877 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:00.049888 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:00.049905 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:00.049916 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:00.049933 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160]     (panel_module, e))
+[Fri Jun 30 17:31:00.049962 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:160] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:00.786736 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:00.787647 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249] Traceback (most recent call last):
+[Fri Jun 30 17:31:00.787715 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:00.787789 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     self.load_middleware()
+[Fri Jun 30 17:31:00.787816 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:00.787849 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:00.787865 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:00.787886 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     module = import_module(module_path)
+[Fri Jun 30 17:31:00.787897 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:00.787915 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     __import__(name)
+[Fri Jun 30 17:31:00.787925 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:00.787955 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:00.787967 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:00.787982 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:00.787991 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:00.788005 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:00.788014 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:00.788028 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     (panel_module, e))
+[Fri Jun 30 17:31:00.788055 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:01.077322 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] mod_wsgi (pid=13149): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:01.077424 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] Traceback (most recent call last):
+[Fri Jun 30 17:31:01.077463 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:01.077513 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     self.load_middleware()
+[Fri Jun 30 17:31:01.077530 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:01.077552 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:01.077565 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:01.077585 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     module = import_module(module_path)
+[Fri Jun 30 17:31:01.077596 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:01.077614 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     __import__(name)
+[Fri Jun 30 17:31:01.077625 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:01.077641 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:01.077652 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:01.077667 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:01.077677 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:01.077705 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:01.077717 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:01.077732 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     (panel_module, e))
+[Fri Jun 30 17:31:01.077758 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:01.319114 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] mod_wsgi (pid=13149): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:01.319162 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] Traceback (most recent call last):
+[Fri Jun 30 17:31:01.319191 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:01.319231 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     self.load_middleware()
+[Fri Jun 30 17:31:01.319253 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:01.319274 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:01.319285 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:01.319300 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     module = import_module(module_path)
+[Fri Jun 30 17:31:01.319310 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:01.319324 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     __import__(name)
+[Fri Jun 30 17:31:01.319332 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:01.319346 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:01.319354 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:01.319366 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:01.319374 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:01.319446 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:01.319460 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:01.319472 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     (panel_module, e))
+[Fri Jun 30 17:31:01.319495 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:01.585622 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:01.585679 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249] Traceback (most recent call last):
+[Fri Jun 30 17:31:01.585705 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:01.585740 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     self.load_middleware()
+[Fri Jun 30 17:31:01.585752 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:01.585768 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:01.585777 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:01.585792 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     module = import_module(module_path)
+[Fri Jun 30 17:31:01.585800 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:01.585813 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     __import__(name)
+[Fri Jun 30 17:31:01.585821 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:01.585834 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:01.585841 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:01.585853 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:01.585860 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:01.585871 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:01.585878 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:01.585889 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     (panel_module, e))
+[Fri Jun 30 17:31:01.585908 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:01.622267 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] mod_wsgi (pid=13149): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:01.622305 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] Traceback (most recent call last):
+[Fri Jun 30 17:31:01.622335 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:01.622454 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     self.load_middleware()
+[Fri Jun 30 17:31:01.622479 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:01.622500 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:01.622510 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:01.622523 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     module = import_module(module_path)
+[Fri Jun 30 17:31:01.622531 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:01.622545 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     __import__(name)
+[Fri Jun 30 17:31:01.622552 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:01.622564 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:01.622571 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:01.622582 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:01.622589 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:01.622599 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:01.622607 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:01.622617 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     (panel_module, e))
+[Fri Jun 30 17:31:01.622637 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:01.872663 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:01.872716 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249] Traceback (most recent call last):
+[Fri Jun 30 17:31:01.872747 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:01.872788 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     self.load_middleware()
+[Fri Jun 30 17:31:01.872801 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:01.872818 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:01.872830 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:01.872862 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     module = import_module(module_path)
+[Fri Jun 30 17:31:01.872872 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:01.872886 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     __import__(name)
+[Fri Jun 30 17:31:01.872894 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:01.872907 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:01.872914 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:01.872926 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:01.872933 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:01.872943 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:01.872951 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:01.872961 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249]     (panel_module, e))
+[Fri Jun 30 17:31:01.872980 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:25249] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:03.867349 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] mod_wsgi (pid=13149): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:03.867483 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] Traceback (most recent call last):
+[Fri Jun 30 17:31:03.867513 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:03.867582 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     self.load_middleware()
+[Fri Jun 30 17:31:03.867597 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:03.867615 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:03.867623 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:03.867637 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     module = import_module(module_path)
+[Fri Jun 30 17:31:03.867645 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:03.867659 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     __import__(name)
+[Fri Jun 30 17:31:03.867667 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:03.867693 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:03.867701 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:03.867712 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:03.867719 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:03.867730 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:03.867737 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:03.867747 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     (panel_module, e))
+[Fri Jun 30 17:31:03.867767 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:04.131837 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:04.131897 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249] Traceback (most recent call last):
+[Fri Jun 30 17:31:04.131924 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:04.131962 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     self.load_middleware()
+[Fri Jun 30 17:31:04.131973 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:04.131990 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:04.131999 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:04.132014 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     module = import_module(module_path)
+[Fri Jun 30 17:31:04.132022 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:04.132037 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     __import__(name)
+[Fri Jun 30 17:31:04.132044 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:04.132057 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:04.132065 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:04.132076 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:04.132084 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:04.132106 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:04.132114 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:04.132124 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249]     (panel_module, e))
+[Fri Jun 30 17:31:04.132144 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:25249] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:04.632366 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:04.632494 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144] Traceback (most recent call last):
+[Fri Jun 30 17:31:04.632524 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:04.632566 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     self.load_middleware()
+[Fri Jun 30 17:31:04.632580 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:04.632596 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:04.632607 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:04.632621 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     module = import_module(module_path)
+[Fri Jun 30 17:31:04.632630 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:04.632644 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     __import__(name)
+[Fri Jun 30 17:31:04.632651 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:04.632665 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:04.632672 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:04.632684 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:04.632691 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:04.632701 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:04.632710 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:04.632721 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     (panel_module, e))
+[Fri Jun 30 17:31:04.632741 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:04.881368 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] mod_wsgi (pid=13149): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:04.881519 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] Traceback (most recent call last):
+[Fri Jun 30 17:31:04.881554 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:04.881599 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     self.load_middleware()
+[Fri Jun 30 17:31:04.881614 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:04.881634 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:04.881646 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:04.881665 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     module = import_module(module_path)
+[Fri Jun 30 17:31:04.881675 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:04.881692 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     __import__(name)
+[Fri Jun 30 17:31:04.881701 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:04.881717 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:04.881726 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:04.881741 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:04.881750 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:04.881764 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:04.881773 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:04.881786 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     (panel_module, e))
+[Fri Jun 30 17:31:04.881809 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:04.957718 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:04.957764 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144] Traceback (most recent call last):
+[Fri Jun 30 17:31:04.957791 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:04.957837 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     self.load_middleware()
+[Fri Jun 30 17:31:04.957849 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:04.957865 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:04.957873 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:04.957896 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     module = import_module(module_path)
+[Fri Jun 30 17:31:04.957908 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:04.957924 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     __import__(name)
+[Fri Jun 30 17:31:04.957931 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:04.957943 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:04.957950 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:04.957968 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:04.957974 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:04.957984 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:04.957991 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:04.958001 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     (panel_module, e))
+[Fri Jun 30 17:31:04.958020 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:05.238321 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] mod_wsgi (pid=13149): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:05.238413 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] Traceback (most recent call last):
+[Fri Jun 30 17:31:05.238445 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:05.238484 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     self.load_middleware()
+[Fri Jun 30 17:31:05.238496 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:05.238511 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:05.238520 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:05.238548 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     module = import_module(module_path)
+[Fri Jun 30 17:31:05.238557 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:05.238571 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     __import__(name)
+[Fri Jun 30 17:31:05.238578 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:05.238591 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:05.238598 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:05.238609 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:05.238615 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:05.238626 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:05.238633 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:05.238643 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     (panel_module, e))
+[Fri Jun 30 17:31:05.238662 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:05.278313 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:05.278454 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144] Traceback (most recent call last):
+[Fri Jun 30 17:31:05.278498 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:05.278541 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     self.load_middleware()
+[Fri Jun 30 17:31:05.278556 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:05.278585 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:05.278597 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:05.278612 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     module = import_module(module_path)
+[Fri Jun 30 17:31:05.278620 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:05.278636 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     __import__(name)
+[Fri Jun 30 17:31:05.278644 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:05.278680 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:05.278689 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:05.278701 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:05.278708 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:05.278719 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:05.278728 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:05.278739 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144]     (panel_module, e))
+[Fri Jun 30 17:31:05.278760 2017] [wsgi:error] [pid 13150:tid 140577057036032] [remote 127.0.0.1:144] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:05.530621 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] mod_wsgi (pid=13149): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:05.530676 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] Traceback (most recent call last):
+[Fri Jun 30 17:31:05.530705 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:05.530747 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     self.load_middleware()
+[Fri Jun 30 17:31:05.530760 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:05.530776 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:05.530787 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:05.530803 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     module = import_module(module_path)
+[Fri Jun 30 17:31:05.530811 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:05.530826 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     __import__(name)
+[Fri Jun 30 17:31:05.530834 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:05.530846 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:05.530854 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:05.530865 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:05.530873 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:05.530899 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:05.530907 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:05.530918 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152]     (panel_module, e))
+[Fri Jun 30 17:31:05.530939 2017] [wsgi:error] [pid 13149:tid 140577065428736] [remote 127.0.0.1:152] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:05.624754 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144] mod_wsgi (pid=13150): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:05.624830 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144] Traceback (most recent call last):
+[Fri Jun 30 17:31:05.624867 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:05.624919 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     self.load_middleware()
+[Fri Jun 30 17:31:05.624935 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:05.624959 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:05.624972 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:05.624993 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     module = import_module(module_path)
+[Fri Jun 30 17:31:05.625005 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:05.625025 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     __import__(name)
+[Fri Jun 30 17:31:05.625036 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:05.625056 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:05.625067 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:05.625085 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:05.625095 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:05.625112 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:05.625124 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:05.625140 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144]     (panel_module, e))
+[Fri Jun 30 17:31:05.625167 2017] [wsgi:error] [pid 13150:tid 140577065428736] [remote 127.0.0.1:144] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"
+[Fri Jun 30 17:31:05.897239 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] mod_wsgi (pid=13149): Exception occurred processing WSGI script '/home/grupogua/webapps/boletasconsorcios/boletasConsorcios/boletasConsorcios/wsgi.py'.
+[Fri Jun 30 17:31:05.897716 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] Traceback (most recent call last):
+[Fri Jun 30 17:31:05.897759 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+[Fri Jun 30 17:31:05.897809 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     self.load_middleware()
+[Fri Jun 30 17:31:05.897826 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+[Fri Jun 30 17:31:05.897848 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     mw_class = import_string(middleware_path)
+[Fri Jun 30 17:31:05.897860 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/webapps/boletasconsorcios/lib/python2.7/Django-1.7.11-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+[Fri Jun 30 17:31:05.897886 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     module = import_module(module_path)
+[Fri Jun 30 17:31:05.897898 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/usr/lib64/python2.7/importlib/__init__.py", line 37, in import_module
+[Fri Jun 30 17:31:05.897919 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     __import__(name)
+[Fri Jun 30 17:31:05.897929 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/middleware.py", line 16, in <module>
+[Fri Jun 30 17:31:05.897949 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     from debug_toolbar.toolbar import DebugToolbar
+[Fri Jun 30 17:31:05.897960 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 151, in <module>
+[Fri Jun 30 17:31:05.897976 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     urlpatterns = DebugToolbar.get_urls()
+[Fri Jun 30 17:31:05.897987 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 145, in get_urls
+[Fri Jun 30 17:31:05.898002 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     for panel_class in cls.get_panel_classes():
+[Fri Jun 30 17:31:05.898012 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]   File "/home/grupogua/lib/python2.7/debug_toolbar/toolbar.py", line 122, in get_panel_classes
+[Fri Jun 30 17:31:05.898027 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152]     (panel_module, e))
+[Fri Jun 30 17:31:05.898054 2017] [wsgi:error] [pid 13149:tid 140577057036032] [remote 127.0.0.1:152] ImproperlyConfigured: Error importing debug panel debug_toolbar.panels.templates: "No module named engine"

@@ -1,0 +1,217 @@
+{% load static from staticfiles %}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es">
+<head>
+<link rel="stylesheet" href="{% static 'css/boletas.css' %}" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Liquidación OnLine</title>
+</head>
+<body>
+<table width="100%" height="723" border="0" cellspacing="0">
+  <tr>
+    <td width="20%" height="83" align="center"><img src="{% static 'munis/' %}{{dirMuni}}/logo_boleta.png" alt="InfoMunicipio"
+    height="80" width="150" /></td>
+  <td width="60%" align="center" valign="middle"><p><span class="comuna_nombre">{{sitio.nombre}}</span><br />
+    <span class="comuna_datos">{{sitio.direccion}}<br />
+        {{sitio.varios1}}</span></p>
+  </td>
+     <td width="20%"  class="destino_cuerpo">
+      <table width="100" align="middle"  valign="middle" border="0" cellspacing="0">
+        <tr>
+          <td height="15" align="center"  class="titulos">Nº Liquidación</td>
+        </tr>
+        <tr>
+          <td class="datos" align="center">{{liq.id_liquidacion}}</td>
+        </tr>
+        <tr>
+          <td height="15" align="center" class="titulos">Fecha Impresión</td>
+        </tr>
+        <tr>
+          <td class="datos" align="center">{{liq.fecha|date:"d/m/Y"}}</td>
+        </tr>
+     </table>     </td>
+  </tr>
+   
+  <tr valign="middle" >
+     <td  colspan="3" valign="middle" class="tituloBoleta"> 
+       <p>LIQUIDACION CUOTAS</p>
+       </td>
+      
+  </tr>
+  
+  <tr>
+    <td height="98" colspan="3" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" valign="middle">
+      <tr>
+        <td width="30%" class="titulos">Cód. Propietario</td>
+        <td colspan="5" class="titulos">Razón Social</td>
+      </tr>
+      <tr>
+        <td  class="datos">{{cuota.id_propietario.id_propietario}}</td>
+        <td colspan="5"  class="datos">{{cuota.id_propietario.nombre_propietario}}</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="titulos">Dirección</td>
+        <td colspan="1" class="titulos">Alquilado</td>
+        <td colspan="2" class="titulos">Datos Ocupante</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="datos">{{cuota.id_unidad.domicilio_reparto}}</td>
+        <td class="datos">{{cuota.id_unidad.alquilado}}</td>
+        <td colspan="2" class="datos">{{cuota.id_unidad.datos_ocupante|default_if_none:""}}</td>
+      </tr> 
+      <tr>     
+        <td  class="titulos">Código Unidad</td>
+        <td width="30%" class="titulos">Nombre Unidad</td>
+        <td width="50%" colspan="2" class="titulos">Barrio/Tipo Unidad</td>
+        <td width="30%" class="titulos">Nº Manzana</td>
+        <td class="titulos">Nº Lote</td>
+        
+      </tr>
+      <tr>
+        <td class="datos">{{cuota.id_unidad.codigo}}</td>
+        <td class="datos">{{cuota.id_unidad.nombre_unidad}}</td>
+        <td colspan="2" class="datos">{{cuota.id_unidad.id_tipo_unidad.nombre_tipo_unidad}}</td>
+        <td class="datos">{{cuota.id_unidad.manzana}}</td>
+        <td class="datos">{{cuota.id_unidad.lote}}</td>
+      </tr>
+      <tr>
+        <td class="titulos">m2 UF</td>
+        <td class="titulos">Nominal</td>
+        <td class="titulos">Vencimiento</td>
+        <td class="titulos">Acc. x Mora</td>
+        <td colspan="2" class="titulos">Total a Pagar</td>
+      </tr>
+      <tr class="bordeAbajo">
+        <td class="datos">{{cuota.id_unidad.superficie}}</td>
+        <td class="datos importe">$ {{liq.nominal}}</td>
+        <td class="datos">{{vencimiento|date:"d/m/Y"}}</td>        
+        <td class="datos importe">$ {{liq.interes}}</td>
+        <td class="datos importe">$ {{liq.total}}</td>        
+        </tr>
+
+      </table>      </td>
+  </tr>
+  <tr height="49" >
+  <td height="49" colspan="3" >
+   <table width="100%">
+    <tr>
+      <td width="100%">
+      <table width="100%" border="0" cellspacing="0">
+        <tr>
+          <td width="30%" class="titulos">Cantidad Cuotas</td>
+          <td width="100%" class="titulos">Detalle Períodos a Pagar</td>     
+        </tr>
+          <tr class="datos_cuotas" >
+            <td valign="top" align="center">{{liq_ctas.count}}</td>
+            <td>{{descrCtas}}</td>
+          </tr>
+      </table>      </td>
+     </tr>
+    </table>  </td>
+  </tr> 
+  <tr height="49" >
+  <td height="49" colspan="3" >&nbsp;</td>
+  </tr>           
+  <tr>
+    <td height="20" colspan="3" align="center"  class="CB">
+      <img src="data:image/png;base64,{{codbar}}" >    </td>
+  </tr> 
+  <tr>
+    <td height="80" colspan="3" align="center" valign="middle" class="CB">     
+      {{codigo}}
+      <br>
+      <hr>
+      <br>      </td>
+   </tr>   
+   <tr>
+    <td height="98" colspan="3" align="left" valign="middle">
+      <table width="100%" border="0" cellspacing="0" valign="middle">
+      <tr>
+        <td width="30%" class="titulos">Cód. Propietario</td>
+        <td colspan="5" class="titulos">Razón Social</td>
+      </tr>
+      <tr>
+        <td  class="datos">{{cuota.id_propietario.id_propietario}}</td>
+        <td colspan="5"  class="datos">{{cuota.id_propietario.nombre_propietario}}</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="titulos">Dirección</td>
+        <td colspan="1" class="titulos">Alquilado</td>
+        <td colspan="2" class="titulos">Datos Ocupante</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="datos">{{cuota.id_unidad.domicilio_reparto}}</td>
+        <td class="datos">{{cuota.id_unidad.alquilado}}</td>
+        <td colspan="2" class="datos">{{cuota.id_unidad.datos_ocupante|default_if_none:""}}</td>
+      </tr> 
+      <tr>     
+        <td  class="titulos">Código Unidad</td>
+        <td width="30%" class="titulos">Nombre Unidad</td>
+        <td width="50%" colspan="2" class="titulos">Barrio/Tipo Unidad</td>
+        <td width="30%" class="titulos">Nº Manzana</td>
+        <td class="titulos">Nº Lote</td>
+        
+      </tr>
+      <tr>
+        <td class="datos">{{cuota.id_unidad.codigo}}</td>
+        <td class="datos">{{cuota.id_unidad.nombre_unidad}}</td>
+        <td colspan="2" class="datos">{{cuota.id_unidad.id_tipo_unidad.nombre_tipo_unidad}}</td>
+        <td class="datos">{{cuota.id_unidad.manzana}}</td>
+        <td class="datos">{{cuota.id_unidad.lote}}</td>
+      </tr>
+      <tr>
+        <td class="titulos">m2 UF</td>
+        <td class="titulos">Nominal</td>
+        <td class="titulos">Vencimiento</td>
+        <td class="titulos">Acc. x Mora</td>
+        <td colspan="2" class="titulos">Total a Pagar</td>
+      </tr>
+      <tr class="bordeAbajo">
+        <td class="datos">{{cuota.id_unidad.superficie}}</td>
+        <td class="datos importe">$ {{liq.nominal}}</td>
+        <td class="datos">{{vencimiento|date:"d/m/Y"}}</td>        
+        <td class="datos importe">$ {{liq.interes}}</td>
+        <td class="datos importe">$ {{liq.total}}</td>        
+        </tr>
+
+      </table>      </td>
+  </tr>
+  <tr height="49" >
+  <td height="49" colspan="3" >
+   <table width="100%">
+    <tr>
+      <td width="100%">
+      <table width="100%" border="0" cellspacing="0">
+        <tr>
+          <td width="30%" class="titulos">Cantidad Cuotas</td>
+          <td width="100%" class="titulos">Detalle Períodos a Pagar</td>     
+        </tr>
+          <tr class="datos_cuotas" >
+            <td valign="top" align="center">{{liq_ctas.count}}</td>
+            <td>{{descrCtas}}</td>
+          </tr>
+      </table>      </td>
+     </tr>
+    </table>  </td>
+  </tr> 
+  <tr height="49" >
+  <td height="49" colspan="3" >&nbsp;</td>
+  </tr>           
+  <tr>
+    <td height="20" colspan="3" align="center"  class="CB">
+      <img src="data:image/png;base64,{{codbar}}" >    </td>
+  </tr> 
+  <tr>
+    <td height="80" colspan="3" align="center" valign="middle" class="CB">     
+      {{codigo}}
+      <br>
+      <hr>
+      <br>      </td>
+   </tr>   
+   
+
+</table>
+</body>
+</html>

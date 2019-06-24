@@ -1,0 +1,10 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+{% load static from staticfiles %}
+{% block title %}{{ title }} | {% trans 'GG Sistemas' %}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><img src="{% static 'images/logo.png' %}" width="20" height="20"/>  {% trans 'GG Sistemas' %}</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

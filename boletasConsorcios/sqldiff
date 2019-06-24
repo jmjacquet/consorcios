@@ -1,0 +1,121 @@
+BEGIN;
+-- Application: boletas
+-- Model: gg_concepto
+ALTER TABLE `gg_concepto`
+	ADD UNIQUE (`ID_CONCEPTO`);
+ALTER TABLE `gg_concepto`
+	MODIFY `NOMBRE_CONCEPTO` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `ENERO` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `FEBRERO` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `MARZO` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `ABRIL` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `MAYO` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `JUNIO` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `JULIO` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `AGOSTO` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `SEPTIEMBRE` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `OCTUBRE` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `NOVIEMBRE` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `DICIEMBRE` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `BAJA` SET NOT NULL;
+ALTER TABLE `gg_concepto`
+	MODIFY `CODIGO` SET NOT NULL;
+-- Model: gg_propietario
+ALTER TABLE `gg_propietario`
+	MODIFY `CODIGO` SET NOT NULL;
+ALTER TABLE `gg_propietario`
+	MODIFY `DIRECCION` SET NOT NULL;
+ALTER TABLE `gg_propietario`
+	MODIFY `LOCALIDAD` SET NOT NULL;
+ALTER TABLE `gg_propietario`
+	MODIFY `CODIGO_POSTAL` SET NOT NULL;
+ALTER TABLE `gg_propietario`
+	MODIFY `SEXO` SET NOT NULL;
+ALTER TABLE `gg_propietario`
+	MODIFY `CUIT_CUIL` SET NOT NULL;
+ALTER TABLE `gg_propietario`
+	MODIFY `TELEFONO` SET NOT NULL;
+ALTER TABLE `gg_propietario`
+	MODIFY `EMAIL` SET NOT NULL;
+ALTER TABLE `gg_propietario`
+	MODIFY `COD_WEB` SET NOT NULL;
+ALTER TABLE `gg_propietario`
+	MODIFY `BAJA` SET NOT NULL;
+-- Model: gg_unidad_consorcio
+CREATE INDEX `gg_unidad_consorcio_ID_TIPO_UNIDAD`
+	ON `gg_unidad_consorcio` (`ID_TIPO_UNIDAD`);
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `ID_PROPIETARIO` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `CODIGO` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `NOMBRE_UNIDAD` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `ALQUILADO` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `DATOS_OCUPANTE` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `DOMICILIO_REPARTO` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `BOLETA_SEPARADA` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `BAJA` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `DETALLE` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `TORRE` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `PISO` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `DEPARTAMENTO` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `BARRIO` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `MANZANA` SET NOT NULL;
+ALTER TABLE `gg_unidad_consorcio`
+	MODIFY `LOTE` SET NOT NULL;
+-- Model: gg_cuota
+CREATE INDEX `gg_cuota_ID_PROPIETARIO`
+	ON `gg_cuota` (`ID_PROPIETARIO`);
+ALTER TABLE `gg_cuota`
+	MODIFY `ID_PROPIETARIO` SET NOT NULL;
+ALTER TABLE `gg_cuota`
+	MODIFY `DETALLE` SET NOT NULL;
+ALTER TABLE `gg_cuota`
+	MODIFY `USUARIO` SET NOT NULL;
+ALTER TABLE `gg_cuota`
+	MODIFY `CODIGO_BARRA` SET NOT NULL;
+ALTER TABLE `gg_cuota`
+	MODIFY `ID_TRIBUTO` SET NOT NULL;
+-- Model: gg_cuota_detalle
+CREATE INDEX `gg_cuota_detalle_ID_CONCEPTO`
+	ON `gg_cuota_detalle` (`ID_CONCEPTO`);
+ALTER TABLE `gg_cuota_detalle`
+	MODIFY `DETALLE` SET NOT NULL;
+ALTER TABLE `gg_cuota_detalle`
+	MODIFY `USUARIO` SET NOT NULL;
+-- Model: gg_canchas_reserva
+DROP INDEX `gg_canchas_reserva_fecha`;
+-- Model: gg_configuracion
+ALTER TABLE `gg_configuracion`
+	ADD COLUMN `tipoLogin` integer NOT NULL;
+-- Model: ArchivosEjecutados
+ALTER TABLE `boletas_archivosejecutados`
+	MODIFY `archivo` varchar(100);
+-- Model: ArchivosDoc
+ALTER TABLE `boletas_archivosdoc`
+	MODIFY `archivo` varchar(100);
+COMMIT;
